@@ -1,0 +1,2 @@
+key: es una llave que le sirve a React para identificar cada elemento de manera unica, como si fuera  un  id o algo similar.
+

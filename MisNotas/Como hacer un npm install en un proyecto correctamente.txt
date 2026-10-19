@@ -1,0 +1,85 @@
+Limpiar/eliminar una instalacion rota o no deseada:
+
+Remove-Item -Recurse -Force node_modules, package-lock.json
+
+Como crear un nuevo proyecto con una version especifica de vite:
+ejemplo:
+  
+npm create vite@5
+npm create vite@6
+
+A partir de Vite 7 se usa:
+
+npm create vite@7 -- --template react
+npm create vite@8 -- --template react
+
+Para crear siempre un proyecto con la ultima version se usa:
+
+npm create vite@latest
+
+Como hacer un npm install en un proyecto ya exixente:
+
+Configurar package.json:
+
+{
+  "name": "clase23",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^6.0.0",
+    "eslint": "^9.0.0",
+    "eslint-plugin-react": "^7.37.0",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-react-refresh": "^0.4.12",
+    "vite": "^8.0.0"
+  }
+}
+
+1. Ubica la línea en tu package.json
+Abre tu archivo y busca el bloque que está abajo del todo. Se ve exactamente así:
+
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "AQUÍ_VA_LA_VERSIÓN" 
+  }
+
+
+2. Formas de escribir la versión (Los símbolos importan)
+Dependiendo de qué tan estricto quieras ser con la versión, debes escribir el número de una de estas tres formas:
+
+Versión exacta fija (Recomendado para evitar sorpresas):
+
+Si pones el número solo, sin ningún símbolo adelante, npm instalará únicamente esa versión exacta.
+
+json:
+
+"vite": "5.4.11"  // Instala solo la 5.4.11, nunca se actualizará sola.
+"vite": "6.0.5"   // Instala solo la 6.0.5.
+"vite": "8.0.0"   // Instala solo la 8.0.0.
+
+3. Aceptar actualizaciones menores (Símbolo Caret ^):
+Es el que viene por defecto. Permite que npm descargue actualizaciones de seguridad automáticas dentro de la misma versión principal.
+
+"vite": "^6.0.0"  // Puede descargar la 6.1.0 o 6.2.0, pero NUNCA saltará a la 7 u 8.
+
+4. Última versión disponible (Palabra clave):
+Si quieres probar siempre lo último de lo último sin importar el número:
+
+"vite": "latest"  // Descargará la versión más nueva que exista en internet hoy.
+
+
+
+
