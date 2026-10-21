@@ -1,14 +1,19 @@
 let nombre = "Marcos"
 let pais = "Argentina"
-let edad = 18
-let tieneTrabajo = edad >= 18 || edad < 18
+let edad = 17
+let tieneTrabajo
 
-
-
-if (edad >= 18 && tieneTrabajo){
-    console.log(nombre + " de " + pais + " Es mayor de Edad, esta trabajando")
+if(edad >= 18){
+    tieneTrabajo = " Tiene trabajo"
 } else {
-    console.log(nombre + " de " + pais + " Es menor de edad, no permitido")
+    tieneTrabajo = " No permitido"
+}
+
+
+if (edad >= 18){
+    console.log(nombre + " de " + pais + " Es mayor de Edad," + tieneTrabajo)
+} else {
+    console.log(nombre + " de " + pais + " Es menor de edad," + tieneTrabajo)
 }
 
 /*
