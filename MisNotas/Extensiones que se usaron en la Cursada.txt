@@ -1,0 +1,6 @@
+HTML to CSS autocompletion
+Live Server
+Live Preview
+Auto Rename Tag
+Error Lens
+Path Intellisense

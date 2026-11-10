@@ -1,0 +1,61 @@
+.tarjeta-producto {
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 16px;
+  background-color: #1a1a1a;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  max-width: 300px;
+}
+
+.imagen-contenedor {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: #242424;
+  border-radius: 8px;
+}
+
+.producto-foto {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; 
+}
+
+.producto-titulo {
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.producto-precio {
+  font-size: 1.5rem;
+  color: #4caf50; 
+  font-weight: bold;
+}
+
+.producto-descripcion {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin: 0;
+}
+
+.boton-carrito {
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.boton-carrito:hover {
+  background-color: #e0e0e0;
+}
