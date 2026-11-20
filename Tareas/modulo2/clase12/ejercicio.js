@@ -3,10 +3,12 @@
 //Crear función calcularAreaRectangulo(base, altura) → retornar área
 
 function calcularAreaRectangulo(base, altura){
-       return area = base * altura
+       return base * altura
 }
 
-console.log(calcularAreaRectangulo(50, 40))
+let area = calcularAreaRectangulo(50, 40)
+
+console.log(area)
 console.log("-------------------------------------------------")
 
 //Crear función esMayorDeEdad(edad) → retornar true/false
@@ -25,7 +27,7 @@ console.log("-------------------------------------------------")
 
 //Usar variable global pais y local ciudad dentro de función → mostrar ambas
 
-function paises(){
+function mostrarPaisCiudad(){
     var pais = "Argentina"
     let ciudad = "Cordoba"
     console.log("Vimes en el pais de " + pais + " y eres de " + ciudad)

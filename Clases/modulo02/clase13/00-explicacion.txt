@@ -6,7 +6,7 @@ Imaginemos que es como una cadena
 [1, 2, 3, 4, 5, 6, 7]
 
 
-Un array es co  mo una lista de datos, uno despues del otro, con posiciones
+Un array es como una lista de datos, uno despues del otro, con posiciones
 
 Ejemplo sin array:
 let alumno1 = "Juan"

@@ -1,9 +1,14 @@
 console.log("Mostrar numeros hasta mostrar:")
-for(let i = 1; i <= 4; i++){
-    let linea = "";
 
-    for (let j = 1; j <= i; j++) {
-        linea += i
+for(let i = 1; i <= 4; i++){
+    console.log(i)
+
+    for(let j = i; j <= i; j++){
+        j + 'i'
+        console.log(j)
     }
-    console.log(linea)
+    
+        
 }
+
+

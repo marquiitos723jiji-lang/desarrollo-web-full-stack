@@ -1,6 +1,3 @@
-
-
-
 let persona = {
     nombre: "Santiago",
     apellido: "Riveros",
